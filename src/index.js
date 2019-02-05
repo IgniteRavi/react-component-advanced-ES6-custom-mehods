@@ -8,7 +8,7 @@ let skiData = {
     goal: 100
 }
 
-class Message extends Component{
+class SkiDayCounter extends Component{
 
     getPercent = decimal => {
         return decimal * 100 + '%'
@@ -40,7 +40,7 @@ class Message extends Component{
 }
 
 render(
-    <Message 
+    <SkiDayCounter 
     total={skiData.total} powder={skiData.powder} backcountry={skiData.backcountry} goal={skiData.goal} />,
     document.getElementById('root')
 )
